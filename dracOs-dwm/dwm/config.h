@@ -88,8 +88,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static const char *termcmd[]	= { "urxvt", "-name", "Console", NULL };
-static const char *filecmd[]	= { "urxvt", "-name", "FileManager", "-e", "ranger", NULL };
-static const char *webcmd[]     = { "links", "-g", NULL };
+static const char *filecmd[]	= { "urxvt", "-name", "FileManager", "-e", "mc", NULL };
 static const char *w3m[]	    = { "w3m", NULL };
 static const char *dracosmenu[]	= { "dmenu", "~/.script/dracosmenu", NULL };
 static const char *scrotcmd[]	= { "scrot", NULL };
@@ -100,7 +99,6 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,     XK_Return,  spawn,              {.v = termcmd } },
 	{ MODKEY|ShiftMask,     XK_d,	    spawn,              {.v = dracosmenu } },
 	{ MODKEY|ShiftMask,     XK_t,	    spawn,              {.v = filecmd } },
-	{ MODKEY|ShiftMask,     XK_l,	    spawn,              {.v = webcmd } },
 	{ MODKEY|ShiftMask, 	XK_w,	    spawn,              {.v = w3m } },
 	{ MODKEY,               XK_f,       setlayout,          {.v = &layouts[0]} },
 	{ MODKEY,               XK_t,       setlayout,          {.v = &layouts[1]} },
