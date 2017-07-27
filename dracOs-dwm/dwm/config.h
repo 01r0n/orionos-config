@@ -46,7 +46,7 @@ static const unsigned int marginbottom 	= 0;
 
 /* tagging */
 static const char *tags[] = { "  MAIN  ", "  DEVEL  ", "  PENTEST  ","  MISC  "};
-wm-dracos/dwm/
+
 static const Rule rules[] = {
 	/* xprop(1):
 	 *	WM_CLASS(STRING) = instance, class
@@ -88,7 +88,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static const char *termcmd[]	= { "urxvt", "-name", "Console", NULL };
-static const char *filecmd[]	= { "urxvt", "-name", "FileManager", "-e", "mc", NULL };
+static const char *filecmd[]	= { "urxvt", "-name", "FileManager", "-e", "ranger", NULL };
 static const char *w3m[]	    = { "w3m", NULL };
 static const char *dracosmenu[]	= { "dmenu_run", "-b","-p", "dracOs", "-fn", "drift:pixelsize=12", "-lh", "22","-nf", "#D0D3D1", "-nb", "#000000", "-sf", "#000000", "-sb", "#D0D3D1", NULL };
 static const char *scrotcmd[]	= { "scrot", NULL };
