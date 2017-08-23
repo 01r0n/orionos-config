@@ -93,7 +93,6 @@ static const char *termcmd[]	= { "urxvt", "-name", "Console", NULL };
 static const char *filecmd[]	= { "urxvt", "-name", "FileManager", "-e", "mc", NULL };
 static const char *volup[]      = { "amixer", "-q", "set", "Master", "5%+", "unmute", NULL };
 static const char *voldown[]    = { "amixer", "-q", "set", "Master", "5%-", "unmute", NULL };
-static const char *w3m[]	= { "w3m", NULL };
 static const char *dracosmenu[]	= { "dmenu_run", "-b","-p", "dracOs", "-fn", "drift:pixelsize=12", "-lh", "22","-nf", "#D0D3D1", "-nb", "#000000", "-sf", "#000000", "-sb", "#D0D3D1", NULL };
 static const char *scrotcmd[]	= { "scrot", NULL };
 
@@ -105,7 +104,6 @@ static Key keys[] = {
     	{ 0,                    XF86XK_AudioLowerVolume,    spawn,          {.v = voldown } },
 	{ MODKEY|ShiftMask,     XK_d,	    spawn,              {.v = dracosmenu } },
 	{ MODKEY|ShiftMask,     XK_t,	    spawn,              {.v = filecmd } },
-	{ MODKEY|ShiftMask, 	XK_w,	    spawn,              {.v = w3m } },
 	{ MODKEY,               XK_f,       setlayout,          {.v = &layouts[0]} },
 	{ MODKEY,               XK_t,       setlayout,          {.v = &layouts[1]} },
 	{ MODKEY,               XK_m,       setlayout,          {.v = &layouts[2]} },
