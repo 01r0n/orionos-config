@@ -1,0 +1,18 @@
+Active Patch
+	- Column
+	- Deck
+	- Autoresize
+	- Bstack
+	- Center
+	- Gaplessgrid
+	- Pertag
+	- Selfrestart
+
+Layout
+	F = Floating
+	T = Tile
+	M = Monocle
+	G = Gapless Grid
+	S = Bottom Stack
+	O = Deck
+	C = Column
